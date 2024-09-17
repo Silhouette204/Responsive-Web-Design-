@@ -1,0 +1,722 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --light: #e7f0dc;
+  --neutral: #729762;
+  --dark: #597445;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.backgroundImage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./img/frontPage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px;
+}
+
+header h1 {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: var(--light);
+}
+
+header h1 a:hover {
+  color: var(--neutral);
+  transition: 0.3s ease;
+}
+
+.navLinks {
+  text-decoration: none;
+  color: var(--light);
+}
+
+.navLinks li a {
+  color: var(--light);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navLinks li {
+  display: inline-block;
+  padding: 0 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.navLinks li a:hover {
+  color: var(--dark);
+  transition: 0.3s ease;
+}
+
+.joinUs {
+  padding: 15px 55px;
+  border-radius: 50px;
+  color: var(--light);
+  background-color: var(--dark);
+  border: none;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.joinUs:hover {
+  background-color: var(--light);
+  transition: 0.3s ease;
+  color: var(--dark);
+  font-weight: 800;
+}
+
+.title {
+  text-align: center;
+  color: var(--light);
+  letter-spacing: 2px;
+  font-size: 3em;
+  margin-top: 7rem;
+}
+
+.titlespan {
+  color: var(--neutral);
+}
+
+.titleContent {
+  color: var(--light);
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 4em 15rem 0 15rem;
+}
+
+.learnmore {
+  margin: 7rem 0 0 0;
+  padding: 20px 60px;
+  border-radius: 50px;
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--light);
+  border: none;
+  background-color: var(--neutral);
+}
+
+.learnmore:hover {
+  background-color: var(--light);
+  transition: 0.3s ease;
+  color: var(--dark);
+}
+
+.titleSocials {
+  font-size: 2rem;
+  letter-spacing: 5rem;
+  color: var(--light);
+  text-align: center;
+  margin: 8rem 0 0 8rem;
+  cursor: pointer;
+}
+
+.titleglass {
+  box-shadow: inset 0 0 15px rgba(248, 248, 248, 0.1),
+    0 0 18px 3px rgba(255, 255, 255, 0.3);
+  padding-bottom: 3.8rem;
+  margin-top: 5rem;
+}
+
+.banner1 {
+  background-color: var(--dark);
+  height: 15rem;
+}
+
+.bannerlist {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  gap: 25rem;
+  margin-left: 13rem;
+  padding-top: 3.5rem;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: var(--light);
+}
+
+.bannerlistContent {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  gap: 22rem;
+  margin-left: 12.5rem;
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  color: var(--light);
+}
+
+.content {
+  width: 100%;
+  height: 70vh;
+  background-color: var(--light);
+}
+
+.contentTitle {
+  text-align: center;
+  padding-top: 4em;
+  font-size: 2em;
+  color: var(--dark);
+}
+
+.contentDesc {
+  text-align: center;
+  padding-top: 3em;
+  margin: 0 30rem 8rem 30rem;
+  color: var(--neutral);
+}
+
+.explore {
+  margin-left: 49rem;
+  padding: 2rem 6rem;
+  border: none;
+  background-color: var(--neutral);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--light);
+}
+
+.explore:hover {
+  box-shadow: inset 500px 0 0 0 var(--dark);
+  transition: ease-out 0.5s;
+  border: var(--neutral);
+}
+
+.explore::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.explore:hover::before {
+  height: 0%;
+}
+
+.dishes {
+  height: 110vh;
+  width: 100%;
+  background-color: var(--light);
+}
+
+.column {
+  float: left;
+  width: 32%;
+  padding: 5px;
+  align-items: center;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column .dish1 {
+  height: 79vh;
+  width: 26vw;
+  margin: 2% 0 0 12%;
+}
+
+.column .dish2 {
+  height: 35vh;
+  width: 26vw;
+  margin: 2% 0 0 12%;
+}
+
+.column .dish3 {
+  height: 78vh;
+  width: 26vw;
+  margin: 2% 0 0 12%;
+}
+
+.column .dish4 {
+  height: 38vh;
+  width: 26vw;
+  margin: -48% 0 0 12%;
+}
+
+.comment {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./img/comment1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mottoTitle {
+  text-align: center;
+  padding-top: 7rem;
+  margin-bottom: 5rem;
+  color: var(--neutral);
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.mottoDes {
+  text-align: center;
+  color: var(--light);
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 10rem 0 10rem;
+}
+
+.commenImage img {
+  height: 15rem;
+  margin: 10rem 0 0 90rem;
+}
+
+.chedinfo {
+  margin-top: -5rem;
+  margin-left: 80rem;
+}
+
+.chefN {
+  margin-bottom: 0.5rem;
+  color: var(--neutral);
+}
+
+.chefD {
+  color: var(--light);
+}
+
+.chenInfo {
+  position: absolute;
+  margin-top: -10rem;
+  padding: 30px 70px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 18rem;
+  color: var(--light);
+  background-color: var(--neutral);
+  border: none;
+  border-radius: 10px;
+}
+
+.chenInfo:hover {
+  box-shadow: inset 500px 0 0 0 var(--light);
+  transition: ease-out 0.5s;
+  color: var(--dark);
+}
+
+.secondBanner {
+  height: 27vh;
+  width: 100%;
+  background-color: var(--light);
+  padding-top: 75px;
+}
+
+.banner2 {
+  background-color: var(--neutral);
+  height: 18vh;
+  width: 80%;
+  margin-left: 12rem;
+}
+
+.banner2row {
+  display: flex;
+}
+
+.bannercolumn2 {
+  flex-basis: 89%;
+}
+
+.banner2T {
+  margin: 1.7em 0 0 2em;
+  color: var(--light);
+  font-size: 35px;
+}
+
+.banner2Tspan {
+  color: var(--dark);
+}
+
+.startedBTN {
+  position: absolute;
+  margin: 2.5em 0 0 70rem;
+  padding: 20px 80px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dark);
+  background-color: var(--light);
+  border: none;
+}
+
+.startedBTN:hover {
+  background-color: var(--dark);
+  color: var(--light);
+  transition: 0.3s ease;
+}
+
+footer {
+  height: 30vh;
+  width: 100%;
+  background-color: var(--dark);
+}
+
+.footerT {
+  color: var(--light);
+  padding: 5em 0 0 10em;
+  position: absolute;
+}
+
+.ffooter {
+  padding: 6em 0 0 60em;
+  text-decoration: none;
+  list-style: none;
+  color: var(--light);
+  font-size: 17px;
+  position: absolute;
+}
+
+.Fadd {
+  margin-bottom: 1rem;
+}
+
+.ffooterS {
+  color: black;
+  cursor: pointer;
+}
+
+.sfooter {
+  padding: 6em 0 0 80em;
+  text-decoration: none;
+  list-style: none;
+  color: var(--light);
+  font-size: 17px;
+}
+
+#sticky {
+  padding: 2rem;
+  background: gray;
+  position: sticky;
+  bottom: 0;
+}
+
+.follow {
+  position: fixed;
+  bottom: 30px;
+  left: 80%;
+  transform: translateX(-5);
+  padding: 30px 50px;
+  color: var(--light);
+  font-weight: 700;
+  background-color: var(--neutral);
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+}
+
+.followD {
+  font-size: 15px;
+  margin-top: 4px;
+  margin-right: -10px;
+  color: var(--dark);
+}
+
+.follow:hover {
+  box-shadow: inset 500px 0 0 0 var(--light);
+  transition: ease-out 0.5s;
+  color: var(--neutral);
+}
+
+label #btn,
+label #cancel {
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 0px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 599px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 40px;
+  }
+
+  label #btn {
+    display: block;
+  }
+
+  .navLinks {
+    position: fixed;
+    width: 100%;
+    height: 85vh;
+    background: var(--dark);
+    top: 130px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .navLinks li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav .navLinks li a {
+    font-size: 17px;
+  }
+
+  #check:checked ~ .navLinks {
+    left: 0%;
+  }
+
+  #check:checked ~ label #btn {
+    display: none;
+  }
+
+  #check:checked ~ label #cancel {
+    display: block;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  .joinUs {
+    background-color: var(--light);
+    color: var(--dark);
+  }
+
+  .joinUs:hover {
+    background-color: var(--neutral);
+    color: var(--light);
+  }
+
+  .navLinks li a:hover {
+    color: var(--neutral);
+  }
+
+  .title {
+    margin-top: 3rem;
+  }
+
+  .titleContent {
+    margin-top: 5rem;
+    width: 80%;
+    margin-left: 3.5rem;
+    font-size: 20px;
+  }
+
+  .backgroundImage {
+    height: 140vh;
+  }
+
+  .titleglass {
+    box-shadow: inset 0 0 0px rgba(248, 248, 248, 0.1),
+      0 0 0px 0px rgba(255, 255, 255, 0.3);
+    padding-bottom: 3.8rem;
+    margin-top: 5rem;
+  }
+
+  .learnmore {
+    margin-left: 12rem;
+    margin-top: 2px;
+  }
+
+  .titleSocials {
+    margin-left: 5rem;
+    gap: 2px;
+  }
+
+  .banner1 {
+    height: 78vh;
+  }
+
+  .bannerlist {
+    padding-top: 8rem;
+    margin-left: 11.5rem;
+    font-size: 23px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .bannerlist li {
+    margin-bottom: 2rem;
+  }
+
+  .bannerlistContent {
+    margin-left: 1rem;
+    display: inline-block;
+    text-align: center;
+    margin-left: 5rem;
+    font-size: 25px;
+  }
+
+  .bannerlistContent li {
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    height: 100vh;
+  }
+
+  .contentTitle {
+    margin-left: 1px;
+    font-size: 40px;
+    padding-top: 5rem;
+  }
+
+  .contentDesc {
+    font-size: 20px;
+    padding-top: 4rem;
+    margin: 0 4rem 0rem 4rem;
+  }
+
+  .dishes {
+    height: 185vh;
+    width: 100%;
+    background-color: var(--light);
+  }
+
+  .column .dish1 {
+    height: 59vh;
+    width: 55vw;
+    margin: -25rem 0 0 8rem;
+  }
+
+  .column .dish2 {
+    height: 35vh;
+    width: 55vw;
+    margin: 10.5rem 0 0 -4.3rem;
+  }
+
+  .column .dish3 {
+    height: 59vh;
+    width: 55vw;
+    margin: 5rem 0 0 8rem;
+  }
+
+  .column .dish4 {
+    height: 35vh;
+    width: 55vw;
+    margin: 42rem 0 0 -4.3rem;
+  }
+
+  .mottoTitle {
+    font-size: 30px;
+    margin: 0 2rem 3rem 2rem;
+    padding-top: 75px;
+  }
+
+  .mottoDes {
+    font-size: 20px;
+    margin: 0 2rem 3rem 2rem;
+    font-weight: 600;
+  }
+
+  .comment {
+    height: 105vh;
+  }
+
+  .commenImage img {
+    height: 10rem;
+    margin: 0 0 0 13rem;
+  }
+
+  .chedinfo {
+    margin-left: 1px;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .chenInfo {
+    margin-left: 170px;
+    margin-top: 2.5rem;
+    padding: 15px 20px;
+    font-size: 20px;
+  }
+
+  .banner2 {
+    margin-top: -1rem;
+    margin-left: 30px;
+    padding: 15px 30px;
+  }
+
+  .banner2T {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .startedBTN {
+    margin: 90px 0 0 130px;
+    padding: 10px 50px;
+  }
+
+  footer {
+    height: 40vh;
+  }
+
+  .footerT {
+    padding-top: 3rem;
+  }
+
+  .ffooter {
+    padding: 6em 0 0 13em;
+    text-decoration: none;
+    list-style: none;
+    color: var(--light);
+    font-size: 17px;
+    position: absolute;
+    text-align: center;
+  }
+
+  .Fadd {
+    margin-bottom: 10px;
+  }
+
+  .sfooter {
+    padding: 13em 0 0 0;
+    text-decoration: none;
+    list-style: none;
+    color: var(--light);
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .follow {
+    position: fixed;
+    bottom: 30px;
+    left: 30%;
+    transform: translateX(-5);
+    padding: 20px 20px;
+    color: var(--light);
+    font-weight: 700;
+    background-color: var(--neutral);
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+  }
+}

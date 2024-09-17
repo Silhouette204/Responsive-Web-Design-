@@ -1,0 +1,286 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --light: #e7f0dc;
+  --neutral: #729762;
+  --dark: #597445;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .backgroundImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("./img/frontPage.jpg");
+    max-width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 40px;
+  }
+
+  label #btn {
+    display: block;
+  }
+
+  .navLinks {
+    position: fixed;
+    width: 100%;
+    height: 85vh;
+    background: var(--dark);
+    top: 130px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .navLinks li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav .navLinks li a {
+    font-size: 17px;
+  }
+
+  #check:checked ~ .navLinks {
+    left: 0%;
+  }
+
+  #check:checked ~ label #btn {
+    display: none;
+  }
+
+  #check:checked ~ label #cancel {
+    display: block;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  .joinUs {
+    background-color: var(--light);
+    color: var(--dark);
+  }
+
+  .joinUs:hover {
+    background-color: var(--neutral);
+    color: var(--light);
+  }
+
+  .navLinks li a:hover {
+    color: var(--neutral);
+  }
+
+  .title {
+    margin-top: 3rem;
+  }
+
+  .titleContent {
+    margin-top: 5rem;
+    width: 80%;
+    margin-left: 3.5rem;
+    font-size: 20px;
+  }
+
+  .backgroundImage {
+    height: 140vh;
+  }
+
+  .learnmore {
+    margin-left: 18rem;
+  }
+
+  .titleSocials {
+    margin-left: 5rem;
+  }
+
+  .titleglass {
+    box-shadow: inset 0 0 0px rgba(248, 248, 248, 0.1),
+      0 0 0px 0px rgba(255, 255, 255, 0.3);
+    padding-bottom: 3.8rem;
+    margin-top: 5rem;
+  }
+
+  .banner1 {
+    height: 58vh;
+  }
+
+  .bannerlist {
+    padding-top: 3rem;
+    margin-left: 17rem;
+    font-size: 23px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .bannerlist li {
+    margin-bottom: 2rem;
+  }
+
+  .bannerlistContent {
+    margin-left: 1rem;
+    display: inline-block;
+    text-align: center;
+    margin-left: 10rem;
+    font-size: 25px;
+  }
+
+  .bannerlistContent li {
+    margin-bottom: 2rem;
+  }
+
+  .contentTitle {
+    margin-left: 1px;
+    font-size: 30px;
+    padding-top: 5rem;
+  }
+
+  .contentDesc {
+    font-size: 20px;
+    padding-top: 4rem;
+    margin: 0 4rem 0rem 4rem;
+  }
+  .explore {
+    margin-left: 15rem;
+    margin-top: 3rem;
+    padding: 20px 60px;
+  }
+
+  .dishes {
+    height: 205vh;
+    width: 100%;
+    background-color: var(--light);
+  }
+
+  .column .dish1 {
+    height: 59vh;
+    width: 45vw;
+    margin: -10rem 0 0 12.5rem;
+  }
+
+  .column .dish2 {
+    height: 35vh;
+    width: 55vw;
+    margin: 25rem 0 0 -6rem;
+  }
+
+  .column .dish3 {
+    height: 59vh;
+    width: 46vw;
+    margin: 47.5rem 0 0 -19.5rem;
+  }
+
+  .column .dish4 {
+    height: 32vh;
+    width: 53vw;
+    margin: 3rem 0 0 11rem;
+  }
+
+  .mottoTitle {
+    font-size: 25px;
+    margin: 0 2rem 3rem 2rem;
+    padding-top: 75px;
+  }
+
+  .mottoDes {
+    font-size: 19px;
+    margin: 0 2rem 3rem 2rem;
+    font-weight: 600;
+  }
+
+  .comment {
+    height: 105vh;
+  }
+
+  .commenImage img {
+    height: 10rem;
+    margin: 0 0 0 19rem;
+  }
+
+  .chedinfo {
+    margin-left: 1px;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .chenInfo {
+    margin-left: 170px;
+    margin-top: 2.5rem;
+    padding: 15px 30px;
+    font-size: 35px;
+  }
+
+  .banner2 {
+    margin-top: -1rem;
+    margin-left: 35px;
+    padding: 15px 32px;
+  }
+
+  .banner2T {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .startedBTN {
+    margin: 100px 0 0 200px;
+    padding: 10px 50px;
+  }
+
+  footer {
+    height: 40vh;
+  }
+
+  .footerT {
+    padding-top: 3rem;
+    margin-left: 5rem;
+  }
+
+  .ffooter {
+    padding: 6em 0 0 17.5em;
+    text-decoration: none;
+    list-style: none;
+    color: var(--light);
+    font-size: 17px;
+    position: absolute;
+    text-align: center;
+  }
+
+  .sfooter {
+    padding: 13em 0 0 0;
+    text-decoration: none;
+    list-style: none;
+    color: var(--light);
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .follow {
+    position: fixed;
+    bottom: 30px;
+    left: 65%;
+    transform: translateX(-5);
+    padding: 20px 20px;
+    color: var(--light);
+    font-weight: 700;
+    background-color: var(--neutral);
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+  }
+}

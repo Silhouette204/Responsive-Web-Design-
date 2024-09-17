@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --light: #e7f0dc;
+  --neutral: #729762;
+  --dark: #597445;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .backgroundImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("./img/frontPage.jpg");
+    max-width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  header {
+    padding: 50px 20px;
+  }
+
+  .navLinks li {
+    display: inline-block;
+    padding: 0 0px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .title {
+    margin: 3em 2em 0 2em;
+  }
+  .titleContent {
+    margin-top: 5rem;
+    width: 80%;
+    margin-left: 7rem;
+    font-size: 20px;
+  }
+
+  .backgroundImage {
+    height: 122vh;
+  }
+
+  .learnmore {
+    margin-left: 25rem;
+    margin-top: 2em;
+  }
+
+  .bannerlist {
+    gap: 10rem;
+    margin-left: 8rem;
+    padding-top: 3.5rem;
+    font-size: 1.5em;
+  }
+
+  .bannerlistContent {
+    gap: 5rem;
+    margin-left: 5rem;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    color: var(--light);
+  }
+
+  .contentTitle {
+    padding-top: 2em;
+  }
+
+  .contentDesc {
+    text-align: center;
+    padding-top: 3em;
+    margin: 0 5rem 8rem 5rem;
+  }
+
+  .explore {
+    margin-left: 20rem;
+    padding: 2rem 6rem;
+  }
+
+  .commenImage img {
+    height: 10rem;
+    margin: 2rem 0 0 50rem;
+  }
+
+  .chedinfo {
+    margin-top: -5rem;
+    margin-left: 41rem;
+  }
+
+  .chenInfo {
+    position: absolute;
+    margin-top: -5rem;
+    margin-left: 5em;
+    padding: 20px 40px;
+  }
+
+  .banner2 {
+    margin-left: 8rem;
+  }
+
+  .banner2T {
+    font-size: 1.2rem;
+    margin-top: 3.5rem;
+  }
+
+  .startedBTN {
+    margin-left: 33rem;
+    padding: 20px 60px;
+    margin-top: 2.7rem;
+  }
+
+  .footerT {
+    padding: 3em 0 0 5em;
+  }
+
+  .ffooter {
+    padding: 6em 0 0 30em;
+  }
+
+  .sfooter {
+    padding: 6em 0 0 45em;
+  }
+
+  .follow {
+    position: fixed;
+    bottom: 30px;
+    left: 75%;
+    transform: translateX(-5);
+    padding: 20px 40px;
+    color: var(--light);
+    font-weight: 700;
+    background-color: var(--neutral);
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+  }
+}

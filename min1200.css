@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --light: #e7f0dc;
+  --neutral: #729762;
+  --dark: #597445;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .backgroundImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("./img/frontPage.jpg");
+    max-width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 50px;
+  }
+
+  .title {
+    margin: 3rem 20px 0 20px;
+  }
+
+  .titleContent {
+    margin: 4em 10rem 0 10rem;
+  }
+
+  .learnmore {
+    margin: 0rem 0 0rem 52rem;
+  }
+
+  .titleglass {
+    box-shadow: inset 0 0 0px rgba(248, 248, 248, 0.1),
+      12px 12px 30px 0px rgba(255, 255, 255, 0.3);
+    padding-bottom: 3.8rem;
+    margin-top: 17.5rem;
+  }
+
+  .titleSocials {
+    margin: 8rem 0 0 7rem;
+  }
+
+  .bannerlist {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 17rem;
+    margin-left: 17rem;
+    padding-top: 3.5rem;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: var(--light);
+  }
+
+  .bannerlistContent {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 13rem;
+    margin-left: 17rem;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    color: var(--light);
+  }
+
+  .contentTitle {
+    padding-top: 3em;
+  }
+
+  .contentDesc {
+    text-align: center;
+    padding-top: 3em;
+    margin: 0 10rem 8rem 10rem;
+  }
+
+  .explore {
+    margin-left: 25rem;
+    padding: 2rem 6rem;
+    border: none;
+    background-color: var(--neutral);
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--light);
+  }
+
+  .commenImage img {
+    height: 10rem;
+    margin: 2rem 0 0 55rem;
+  }
+
+  .chedinfo {
+    margin-top: -5rem;
+    margin-left: 45rem;
+  }
+
+  .chenInfo {
+    position: absolute;
+    margin-top: -6rem;
+    padding: 30px 70px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 12rem;
+    color: var(--light);
+    background-color: var(--neutral);
+    border: none;
+    border-radius: 10px;
+  }
+
+  .banner2 {
+    background-color: var(--neutral);
+    height: 18vh;
+    width: 88%;
+    margin-left: 5rem;
+  }
+
+  .banner2T {
+    margin: 2em 0 0 2em;
+    color: var(--light);
+    font-size: 28px;
+  }
+
+  .startedBTN {
+    position: absolute;
+    margin: 2.3em 0 0 49rem;
+    padding: 15px 60px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark);
+    background-color: var(--light);
+    border: none;
+  }
+
+  .footerT {
+    color: var(--light);
+    padding: 3em 0 0 5em;
+    position: absolute;
+  }
+
+  .ffooter {
+    padding: 5em 0 0 38em;
+    text-decoration: none;
+    list-style: none;
+    color: var(--light);
+    font-size: 17px;
+    position: absolute;
+  }
+
+  .sfooter {
+    padding: 6em 0 0 55em;
+    text-decoration: none;
+    list-style: none;
+    color: var(--light);
+    font-size: 17px;
+  }
+
+  .follow {
+    position: fixed;
+    bottom: 30px;
+    left: 70%;
+    transform: translateX(-5);
+    padding: 20px 50px;
+    color: var(--light);
+    font-weight: 700;
+    background-color: var(--neutral);
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+  }
+}
